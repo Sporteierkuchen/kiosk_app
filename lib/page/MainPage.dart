@@ -2535,15 +2535,111 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
     _categorylist.add(CategoryDTO(name: "Kaffee"));
     _categorylist.add(CategoryDTO(name: "Kuchen"));
 
-    ByteData bytes = await rootBundle.load('lib/images/articles/Arme Ritter.png');
-    var buffer = bytes.buffer;
-    String image = base64.encode(Uint8List.view(buffer));
-    articleDTOList.add(ArticleDTO(title: "test", group: _categorylist[0], priceGross: 5.67,extraslist: getExtras(), icon: image));
+    ByteData bytes;
+    ByteBuffer buffer;
+    String image;
+
+    bytes = await rootBundle.load('lib/images/articles/Arme Ritter.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Arme Ritter", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Avocado Brot.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Avocado Brot", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/English Breakfast.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "English Breakfast", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Granola Bowl.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Granola Bowl", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Obstplatte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Obstplatte", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Omelette.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Omelette", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Pancakes.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Pancakes", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Pochierte Eier.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Pochierte Eier", group: _categorylist[0], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
 
 
+    bytes = await rootBundle.load('lib/images/articles/Espresso.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Espresso", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Heiße Schokolade.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Heiße Schokolade", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Ice Chai Tee Latte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Ice Chai Tee Latte", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Ice Latte Macchiato.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Ice Latte Macchiato", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Ice Matcha Latte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Ice Matcha Latte", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Kaffee.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Kaffee", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Latte Macchiato.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Latte Macchiato", group: _categorylist[1], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
 
 
+    bytes = await rootBundle.load('lib/images/articles/Erdbeertorte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Erdbeertorte", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
 
+    bytes = await rootBundle.load('lib/images/articles/Himbeertorte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Himbeertorte", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Mohnkuchen.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Mohnkuchen", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Schokoladentorte.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Schokoladentorte", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/Zitronenkuchen.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Zitronenkuchen", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
 
      // await loadArticleGroups();
 
