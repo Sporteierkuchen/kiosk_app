@@ -365,6 +365,7 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
                                                 CrossAxisAlignment.start,
                                                 children: [
                                                   Row(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
                                                       Expanded(
                                                         child: Text(
@@ -2640,6 +2641,17 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
     buffer = bytes.buffer;
     image = base64.encode(Uint8List.view(buffer));
     articleDTOList.add(ArticleDTO(title: "Zitronenkuchen", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+
+    bytes = await rootBundle.load('lib/images/articles/egon.jpg');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Egon Kowalski", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
+
+    bytes = await rootBundle.load('lib/images/articles/egon2.png');
+    buffer = bytes.buffer;
+    image = base64.encode(Uint8List.view(buffer));
+    articleDTOList.add(ArticleDTO(title: "Gleich ham wa den Salat!", group: _categorylist[2], priceGross: (1+ Random().nextDouble() * 10) + (Random().nextDouble() * 100)/100,extraslist: getExtras(), icon: image));
 
      // await loadArticleGroups();
 
