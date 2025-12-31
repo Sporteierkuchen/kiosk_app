@@ -90,6 +90,8 @@ class DemoCatalogLoader {
       "lib/images/articles/Mohnkuchen.png",
       "lib/images/articles/Schokoladentorte.png",
       "lib/images/articles/Zitronenkuchen.png",
+      "lib/images/articles/Egon Kowalski.png",
+      "lib/images/articles/Gleich ham wa den Salat!.png",
     ];
 
     for (final p in cakeAssets) {
