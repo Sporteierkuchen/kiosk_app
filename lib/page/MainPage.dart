@@ -1,3 +1,4 @@
+/*
 import 'dart:convert';
 import 'dart:math';
 import 'dart:io' show Platform;
@@ -364,6 +365,7 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
                                                 crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                                 children: [
+
                                                   Row(
                                                     children: [
                                                       Expanded(
@@ -2420,7 +2422,7 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
             children: [
               Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: LoadingAnimationWidget.prograssiveDots(
+                child: LoadingAnimationWidget.progressiveDots(
                   color: const Color(0xFF7B1A33),
                   size: 100,
                 ),
@@ -2741,3 +2743,4 @@ class _BottomNavBarState extends State<MainPage> with TickerProviderStateMixin {
 
 
 
+*/
